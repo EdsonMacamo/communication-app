@@ -4,10 +4,8 @@
             <h3>Value: {{value}}</h3>
             <app-child-item
             [title]="title"
-            (plusOne) ="inkBy(1)"
-            (plusTwo) ="inkBy(2)"
-            (minusOne) ="inkBy(-1)"
-            (minusTwo) ="inkBy(-2)"
+            (inc) ="inkBy($event)"
+            
             >
                
             </app-child-item>

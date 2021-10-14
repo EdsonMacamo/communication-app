@@ -13,7 +13,8 @@ export class EventComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  inkBy(n: number){
-    this.value += n;
+  inkBy(event:any){
+    console.log(event)
+    this.value += event;
   }
 }
